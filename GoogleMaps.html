@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.google.pl" />
+<title>test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/?gws_rd=ssl</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>var1</td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>index=0;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>storedVars.var1&lt;4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Array('Krasnik','Pulawy','Chelm');</td>
+	<td>miasta</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>javascript{storedVars['miasta'].lenght}</td>
+	<td>dlugosc</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.gb_b.gb_5b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#gb8 &gt; span.gb_4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.searchbox-directions-container</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=searchbox-directions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.gstl_51.sbib_a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#sb_ifc51 &gt; input.tactile-searchbox-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>index</td>
+	<td>temp</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#sb_ifc51 &gt; input.tactile-searchbox-input</td>
+	<td>javascript{storedVars['miasta'][storedVars['temp']]}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#sb_ifc52 &gt; input.tactile-searchbox-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#sb_ifc52&gt; input.tactile-searchbox-input</td>
+	<td>Lublin</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.suggest-left-cell</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.suggest-left-cell</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='omnibox-directions']/div/div[2]/div/div/div/div[2]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.section-directions-trip.clearfix</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars.var1++}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>index++;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
